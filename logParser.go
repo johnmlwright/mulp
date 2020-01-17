@@ -1,8 +1,8 @@
 package main
 
 import (
-	"bufio" //To read input by line
-	"errors"
+	"bufio"   //To read input by line
+	"errors"  //Custom error
 	"flag"    //Imported for easy flag management.
 	"fmt"     //To output to console
 	"os"      //Arg finder and file open
@@ -18,7 +18,7 @@ func initFlags() {
 	output = ""
 	const (
 		defaultHttpLog = false
-		//		defaultFileName = "artifactory.log"
+		//	defaultFileName = "artifactory.log"
 		defaultInput         = "ERROR"
 		defaultVerbose       = false
 		defaultSort          = true
@@ -74,13 +74,14 @@ func ifVerbose(in string) {
 type LogString struct {
 	count int
 	text  string
-	times []string
+	times []string //timestamp array
 	//timestamp array
 	//first occurrence already sorted haha
 	//last occurrence
 	//duration array - httpLog only
 	//shortest duration
 	//longest duration
+	//line array
 }
 
 func getOutput(strArr []LogString) string {

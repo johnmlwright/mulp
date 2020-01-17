@@ -25,8 +25,13 @@ $ go run logParser.go -i INFO
 
 ## To-Do
 
+* Convert verbose to debug
+* * Re-dd verbose as shortcut to unmerge and show time.
 * Case Insensitivity flag (for inputs)
-* Dynamic timestamp removal - this will deprecate -http, also need to account for text in timestamps (Jan, Feb, etc, not always at start of line, see: catalina.out and localhost.*.out)
+* Dynamic timestamp removal 
+* * This will deprecate -http
+* * Also need to account for text in timestamps (Jan, Feb, etc, not always at start of line, see: catalina.out and localhost.*.out)
 * Split program into multiple files
+* * src folder?
 * Create executables
 * Create duration array for http requests.
