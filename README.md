@@ -26,7 +26,7 @@ $ go run logParser.go -i INFO
 ## To-Do
 
 * Convert verbose to debug
-* * Re-dd verbose as shortcut to unmerge and show time.
+* * Re-add verbose as shortcut to unmerge and show time.
 * Case Insensitivity flag (for inputs)
 * Dynamic timestamp removal 
 * * This will deprecate -http
