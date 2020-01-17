@@ -1,3 +1,3 @@
 *.log
 *.out
-create-executable-sh
+create-executable.sh
