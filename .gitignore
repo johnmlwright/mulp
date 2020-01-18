@@ -1,3 +1,5 @@
 *.log
 *.out
 create-executable.sh
+.idea
+*.iml
