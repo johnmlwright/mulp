@@ -61,9 +61,6 @@ func initFlags() {
 func ifVerbose(in string) {
 	if verbose {
 		fmt.Print(in)
-		/*		if outputName != "" {
-				output += in
-			}*/
 	}
 	if outputLog {
 		output += in
@@ -75,7 +72,6 @@ type LogString struct {
 	count int
 	text  string
 	times []string //timestamp array
-	//timestamp array
 	//first occurrence already sorted haha
 	//last occurrence
 	//duration array - httpLog only
@@ -145,10 +141,6 @@ func logOut() {
 	//For verbose mode, it prints as the strings come in, so we don't need to print out here.
 }
 
-// func (l LogString) createLogString(){
-
-// }
-
 //Check to see if it exists. Also output index to reduce iterations.
 func stringExists(str string, strArr []LogString) (int, bool) {
 	//For every element (starting from 0)
@@ -185,7 +177,6 @@ func parseLogs(fileName string) {
 	if err != nil {
 		panic(errors.New("error: invalid filename. please ensure file exists. filename: \"" + fileName + "\"\nNote: file can be specified with -f or -file flags. See -h for help."))
 	}
-	//	fmt.Println("We opened: ", fileName)
 	//Defer is great for files. Automatically closes when "done".
 	//Works on error captures if there's a parent stack. Although we won't have a parent stack.
 	defer file.Close()

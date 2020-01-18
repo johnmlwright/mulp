@@ -17,6 +17,8 @@ $ go run logParser.go -v artifactory.1.log
 // Shows verbose output (for debugging) and executes on file artifactory.1.log
 $ go run logParser.go -i INFO
 // Looks for lines with input "INFO" case sensitive.
+$ go run logParser.go -kvp artifactory.log ERROR catalina.out SEVERE
+// Runs against artifactory.log looking for ERROR and catalina.out looking for SEVERE
 ```
 
 ## Built With
